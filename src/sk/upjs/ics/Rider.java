@@ -89,7 +89,7 @@ public class Rider {
     
     public String writeRider() {
         StringBuilder sb = new StringBuilder();
-        sb.append("\t\t"+firstName+" \""+nickName+"\""+" "+lastName+". Role: "+type+", date of birth: "+dateOfBirth+", nationality: "+nationality+" "+height+heightUnit+"\n");
+        sb.append("\t\t"+firstName+" \""+nickName+"\""+" "+lastName+". Role: "+type+", date of birth: "+dateOfBirth+", nationality: "+nationality+", height: "+height+heightUnit+"\n");
         for(SeasonAchievement seasonAchievementa : seasonAchievements) {            
             sb.append("\t"+seasonAchievementa.writeAchievements());
         }     
