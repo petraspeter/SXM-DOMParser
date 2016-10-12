@@ -39,15 +39,13 @@ public class UCIRoad {
         this.actualSeasosn = actualSeasosn;
     }
     
-    public String writeUCIRoad() {
+    public void writeUCIRoad() {
         StringBuilder sb = new StringBuilder();
-        sb.append("Category: "+category+", "+teams+".\n");
+        sb.append("Category: "+category+", season " +actualSeasosn+".\n");
         for(Team team : teams) {
             sb.append("\t"+team.writeTeam());
         }
-        return sb.toString();
+        System.out.println(sb.toString());
     }
-    
-    
     
 }

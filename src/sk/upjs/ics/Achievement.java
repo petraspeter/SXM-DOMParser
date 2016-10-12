@@ -23,17 +23,9 @@ public class Achievement {
         this.achievement = achievement;
     }
 
-    public Achievement(String raceType, String achievement) {
-        this.raceType = raceType;
-        this.achievement = achievement;
-    }
-
     @Override
     public String toString() {
-        return raceType + " achievement: " + achievement;
+        return "\t\t\t\t"+raceType + " achievement: " + achievement;
     }
     
-    
-    
-
 }

@@ -29,13 +29,11 @@ public class Team {
         this.teamName = teamName;
     }
     
-    
-    
     public String writeTeam() {
         StringBuilder sb = new StringBuilder();
         sb.append(teamName+": \n");
         for(Rider rider : riders) {
-            sb.append("\t"+rider.writeRider());
+            sb.append(rider.writeRider());
         }
         return sb.toString();
     }

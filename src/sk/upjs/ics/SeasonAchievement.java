@@ -32,24 +32,14 @@ public class SeasonAchievement {
     public void setAchievements(List<Achievement> achievements) {
         this.achievements = achievements;
     }
-
-    public SeasonAchievement(int year, String team) {
-        this.year = year;
-        this.team = team;
-    }
-    
-    
     
     public String writeAchievements() {
         StringBuilder sb = new StringBuilder();
-        sb.append("Season "+year+", "+team+"\n");
+        sb.append("\t\t"+"Season "+year+", "+team+"\n");
         for (Achievement achievement : achievements) {
-            sb.append("\t"+achievement.toString()+"\n");
+            sb.append(achievement.toString()+"\n");
         }
         return sb.toString();
     }
-    
-    
-    
     
 }

@@ -86,23 +86,10 @@ public class Rider {
     public void setAchievements(List<SeasonAchievement> achievements) {
         this.seasonAchievements = achievements;
     }
-
-    public Rider(String firstName, String lastName, String nickName, String type, String dateOfBirth, String nationality, String heightUnit, double height) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.nickName = nickName;
-        this.type = type;
-        this.dateOfBirth = dateOfBirth;
-        this.nationality = nationality;
-        this.heightUnit = heightUnit;
-        this.height = height;
-    }
-    
-    
     
     public String writeRider() {
         StringBuilder sb = new StringBuilder();
-        sb.append(firstName+" \""+nickName+"\""+" "+lastName+". \nRole: "+type+", date of birth: "+dateOfBirth+", nationality: "+nationality+" "+height+heightUnit+"\n");
+        sb.append("\t\t"+firstName+" \""+nickName+"\""+" "+lastName+". Role: "+type+", date of birth: "+dateOfBirth+", nationality: "+nationality+" "+height+heightUnit+"\n");
         for(SeasonAchievement seasonAchievementa : seasonAchievements) {            
             sb.append("\t"+seasonAchievementa.writeAchievements());
         }     
